@@ -1,3 +1,5 @@
+
+body {background:red !important;}
 /* head da aplicação do simulador de imposto de renda pessoa física*/
 /* Estilização geral da pagina */
 /* paletas de cores: body: #000000, titulos: #D4AF37, Textos: f5f5f5, botão: #d4af37, container: #1a1a1a */
@@ -57,15 +59,9 @@ button:hover {
     margin: 10px 0;
 }
 /* responsividade para dispositivos móveis */
-@media (max-width: 600px) {
-    .container, .result {
-        padding: 10px;
-        margin: 10px;
-    }
-    button {
-        width: 100%;
-        padding: 15px;
-    }
+@media (max-width: 768px) {
+    /*regras de estilo para dispositivos móveis */
+
 }
 /* animação para o resultado */
 .result {
