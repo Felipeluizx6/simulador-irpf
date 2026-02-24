@@ -1,0 +1,144 @@
+/* head da aplicação do simulador de imposto de renda pessoa física*/
+/* Estilização geral da pagina */
+/* paletas de cores: body: #000000, titulos: #D4AF37, Textos: f5f5f5, botão: #d4af37, container: #1a1a1a */
+/*fundo do input(claro): ffffff, fundo do input(escuro): #1a1a1a, borda do input: #d4af37, placeholder do input: #d4af37, texto do input: #000000*/
+body {
+    background-color: #000000;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    color: #D4AF37;
+    text-align: center;
+}
+.container {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+input[type="number"]::placeholder {
+    color: #d4af37;
+}
+button {
+    background-color: #d4af37;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #b8860b;
+}
+.result {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+.result p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    .container, .result {
+        padding: 10px;
+        margin: 10px;
+    }
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+/* animação para o resultado */
+.result {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* adição de um rodape para a página */
+footer {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* estilização do rodape */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* adição de um efeito de hover para os resultados */
+.result p:hover {
+    color: #d4af37;
+    cursor: pointer;
+}
+/* adição de uma borda para os resultados */.result {
+    border: 2px solid #d4af37;
+}
+/* adição de um efeito de transição para os resultados */.result {
+    transition: all 0.3s ease-in-out;
+}
+/* adição de um efeito de hover para os resultados */.result:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #d4af37;
+}
+/* adição de um efeito de foco para os inputs */input[type="number"]:focus {
+    border-color: #b8860b;
+    box-shadow: 0 0 5px #b8860b;
+    outline: none;
+}
+/* adição de um efeito de hover para os botões */button:hover {
+    background-color: #b8860b;
+    box-shadow: 0 0 5px #b8860b;
+}
+/* adição de um efeito de foco para os botões */button:focus {
+    background-color: #b8860b;
+    box-shadow: 0 0 5px #b8860b;
+    outline: none;
+}
+
+/* Centralizar email de contato no rodape */
+footer p {
+    text-align: center;
+}
+/*inclusão de copyrigth no rodape, email de contato: contato@felipexbase.com.br*/
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* adição de um efeito de hover para os links do rodape */footer p a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+/* adição de um efeito de foco para os links do rodape */footer p a:focus {
+    color: #d4af37;
+    text-decoration: underline;
+    outline: none;
+
+    /*centralizar o "desenvolvido por FelipeXBase" no rodape*/
+    text-align: center;
+}
+/*fim do código CSS para o simulador de imposto de renda pessoa física*/
