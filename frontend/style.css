@@ -1,0 +1,123 @@
+/*  Simulador IRPF — CSS limpo (base) */
+/* * { outline: 1px solid rgba(255,255,255,0.1); } */
+
+html, body {
+  background: #000000;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos */
+h1, h2 {
+  color: #D4AF37; /* dourado */
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+/* Container principal */
+
+.container {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 0 10px;
+  border: 2px solid #d4af37;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #f5f5f5;
+}
+
+input[type="number"]::placeholder {
+  color: #d4af37;
+}
+
+input[type="number"]:focus {
+  border-color: #b8860b;
+  box-shadow: 0 0 5px #b8860b;
+  outline: none;
+}
+
+/* Botão */
+button {
+  background: #d4af37;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #b8860b;
+  box-shadow: 0 0 5px #b8860b;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #b8860b;
+}
+
+/* Resultado */
+.result {
+  margin-top: 16px;
+  padding: 14px;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  background: #1a1a1a;
+  text-align: center;
+
+  animation: fadeIn 0.6s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.result:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(212,175,55,0.6);
+}
+
+.result p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Rodapé (sem fixed pra não tampar conteúdo) */
+footer {
+  background: #1a1a1a;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 12px 10px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  html, body { background: #0b0b0b; }
+  .container { margin: 12px; }
+}
